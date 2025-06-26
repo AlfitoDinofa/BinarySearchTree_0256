@@ -6,4 +6,7 @@ public:
     int info;
     node *leftchild;
     node *rightchild;
-};
+    
+    node()
+
+
