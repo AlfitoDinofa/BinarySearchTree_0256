@@ -16,4 +16,12 @@ public:
 };  
 
 class BinaryTree
+{
+public:
+    node *ROOT;
+
+    BinaryTree()
+    {
+        ROOT = nullptr; //intializing root to null
+    }
 
