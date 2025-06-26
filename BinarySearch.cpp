@@ -10,8 +10,8 @@ public:
 
     node()
     {
-        leftchild = nullptr;  // initialoze left child to the null
-        rightchild = nullptr; // initilozr right child to the null
+        leftchild = nullptr;  // initialize left child to null
+        rightchild = nullptr; // initialize right child to null
     }
 };
 
@@ -22,8 +22,9 @@ public:
 
     BinaryTree()
     {
-        ROOT = nullptr; // intializing root to null
+        ROOT = nullptr; // initializing root to null
     }
+
     void insert()
     {
         int x;
@@ -35,3 +36,10 @@ public:
 
         // step 2 : assign value to the data field of new node
         newNode->info = x;
+
+        // step 3 : make the left and right child of the new node point to null
+        newNode->leftchild = nullptr;
+        newNode->rightchild = nullptr;
+
+
+
