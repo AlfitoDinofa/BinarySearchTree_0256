@@ -94,5 +94,20 @@ public:
         }
     }
 
+    void preorder(node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "tree is empty" << endl;
+            return;
+        }
+        if (ptr != nullptr)
+        {
+            cout << ptr->info << " ";
+            preorder(ptr->leftchild);
+            preorder(ptr->rightchild);
+        }
+    }
+
 
 
