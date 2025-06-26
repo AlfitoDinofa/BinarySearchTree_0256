@@ -110,4 +110,19 @@ public:
     }
 
 
+    void postorder(node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr != nullptr)
+        {
+            postorder(ptr->leftchild);
+            postorder(ptr->rightchild);
+            cout << ptr->info << " "; // parent
+        }
+    }
 
+ 
