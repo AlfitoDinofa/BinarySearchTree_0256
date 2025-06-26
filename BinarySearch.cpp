@@ -41,5 +41,9 @@ public:
         newNode->leftchild = nullptr;
         newNode->rightchild = nullptr;
 
+        // step 4 : locate the node which will be the parent of the new node
+        node *parent = nullptr;
+        node *currentnode = nullptr;
+        
 
 
