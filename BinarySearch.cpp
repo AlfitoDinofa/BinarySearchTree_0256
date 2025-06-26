@@ -24,4 +24,13 @@ public:
     {
         ROOT = nullptr; //intializing root to null
     }
+    void insert()
+    {
+        int x;
+        cout << "masukkan nilai: ";
+        cin >> x;
+
+        //step 1 : allocate memory for the new node
+        node *newNode = new node();
+
 
