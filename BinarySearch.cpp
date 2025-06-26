@@ -8,5 +8,12 @@ public:
     node *rightchild;
     
     node()
+    {
+        leftchild = nullptr; //initialoze left child to the null
+        rightchild = nullptr; //initilozr right child to the null
+    }
+
+};  
+
 
 
